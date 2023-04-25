@@ -158,6 +158,17 @@ body {
   background-size: cover;
   background-color: var(--headings-color);
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img-mob2x-min.jpg);
+  }
+}
 .hero-title {
   /* width: 496px; */
   width: 320px;
@@ -846,6 +857,16 @@ body {
       ),
       url(../images/hero-img-tab.jpg);
   }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img-tab2x-min.jpg);
+  }
   .hero-title {
     font-size: 36px;
   }
@@ -883,6 +904,16 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/img-hero.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img-2x-min.jpg);
   }
   .nav-list {
     display: flex;
