@@ -152,19 +152,19 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-hero.jpg);
+    url(../images/hero-img-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-color: var(--headings-color);
 }
 .hero-title {
   /* width: 496px; */
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
 
   color: var(--background-color);
-  /* font-size: 56px; */
+
   font-size: 34px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -839,7 +839,13 @@ body {
   .container {
     width: 428px;
   }
-
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img-tab.jpg);
+  }
   .hero-title {
     font-size: 36px;
   }
@@ -871,10 +877,21 @@ body {
     font-size: 12px;
     line-height: 1.17;
   }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-hero.jpg);
+  }
   .nav-list {
     display: flex;
     margin-left: 120px;
     margin-right: 121px;
+  }
+  .hero-title {
+    font-size: 56px;
+    width: 496px;
   }
   .team-card {
     flex-basis: calc((100% - 24px) / 2);
@@ -939,6 +956,25 @@ body {
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+  }
+  .nav-list {
+    margin-left: 76px;
+  }
+  .contact-list {
+    flex-direction: row;
+
+    padding: 24px 0;
+    column-gap: 40px;
+  }
+  .contacts {
+    margin-left: auto;
+  }
+  .contact {
+    padding: 0;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .team-card {
     flex-basis: calc((100% - 72px) / 4);
