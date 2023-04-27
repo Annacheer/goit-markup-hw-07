@@ -146,9 +146,17 @@ body {
 }
 /* ----------------MOB-MENU---------------- */
 .menu-open-btn {
+  display: block;
+  align-items: center;
   margin-left: auto;
+  border: none;
+  background-color: transparent;
 }
 .menu-hamburger {
+  fill: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mob-menu {
   position: fixed;
@@ -245,8 +253,8 @@ body {
 /* -------------Main Studio-------------------- */
 .hero {
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   max-width: 1440px;
 
   background-image: linear-gradient(
@@ -288,7 +296,7 @@ body {
   display: inline-block;
   min-width: 169px;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 72px;
 
   background-color: var(--primary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -796,9 +804,6 @@ body {
   right: 24px;
 }
 
-.menu-hamburger {
-  fill: var(--headings-color);
-}
 .modal-close-btn:active {
   background-color: var(--pressed-state-color);
 }
@@ -1044,6 +1049,9 @@ body {
     font-size: 56px;
     width: 496px;
   }
+  .hero-btn {
+    margin-top: 36px;
+  }
   .mob-menu {
     display: none;
   }
@@ -1117,6 +1125,13 @@ body {
   .container {
     width: 1158px;
   }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .hero-btn {
+    margin-top: 48px;
+  }
   .backdrop {
     padding-top: 80px;
   }
@@ -1176,7 +1191,11 @@ body {
     width: 582px;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .team > .container {
+    width: 294px;
+  }
+}
 @media screen and (max-width: 1157px) {
   .work {
     display: none;
