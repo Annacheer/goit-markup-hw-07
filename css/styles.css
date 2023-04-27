@@ -152,6 +152,7 @@ body {
   border: none;
   background-color: transparent;
 }
+
 .menu-hamburger {
   fill: #000000;
   display: flex;
@@ -1039,6 +1040,7 @@ body {
   }
   .page-nav {
     padding: 0;
+    justify-content: center;
   }
   .nav-list {
     display: flex;
@@ -1132,6 +1134,11 @@ body {
   .hero-btn {
     margin-top: 48px;
   }
+  .adv-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
   .backdrop {
     padding-top: 80px;
   }
@@ -1175,6 +1182,12 @@ body {
   .customers {
     padding: 120px 0;
   }
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-slogan {
+    margin-bottom: 0;
+  }
   .footer-slogan-block {
     margin-right: 120px;
   }
@@ -1183,6 +1196,9 @@ body {
   }
   .footer-subscribe-input {
     opacity: 1;
+  }
+  .footer-soc-list {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
