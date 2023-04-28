@@ -520,21 +520,32 @@ body {
 }
 
 /* ----------------Main Portfolio------------- */
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .filter-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  /* padding-top: 96px; */
+  padding-top: 48px;
+  /* padding-bottom: 120px; */
+  padding-bottom: 48px;
 }
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  /* justify-content: center; */
+  /* margin-bottom: 72px; */
 }
 .filter li:not(:last-child) {
   margin-right: 24px;
 }
 .filter-btn {
+  display: inline-block;
   padding: 12px 24px;
-  border: 1 px solid var(--accent-color);
+  border-color: var(--accent-color);
+  border-width: 1px;
+  border-style: solid;
   border-radius: 4px;
 
   color: var(--primary-text-color);
@@ -1124,6 +1135,13 @@ body {
   .modal {
     width: 408px;
   }
+  .filter-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .filter {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1221,5 +1239,9 @@ body {
   }
   .adv-icon-block {
     display: none;
+  }
+  .filter-section {
+    padding-top: 100px;
+    padding-bottom: 72px;
   }
 }
