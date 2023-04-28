@@ -166,7 +166,7 @@ body {
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  background-color: var(--lightmode-color);
+  background-color: var(--background-color);
   padding: 24px 24px 40px 40px;
   display: flex;
   flex-direction: column;
@@ -208,6 +208,9 @@ body {
 }
 .mob-menu-link:hover,
 .mob-menu-link:focus {
+  color: var(--pressed-state-color);
+}
+.active:visited {
   color: var(--pressed-state-color);
 }
 .link {
