@@ -535,7 +535,7 @@ body {
   flex-wrap: wrap;
   row-gap: 16px;
   /* justify-content: center; */
-  /* margin-bottom: 72px; */
+  margin-bottom: 48px;
 }
 .filter li:not(:last-child) {
   margin-right: 24px;
@@ -571,28 +571,34 @@ body {
 }
 
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 .card {
-  margin-right: 24px;
-  margin-bottom: 48px;
-  width: calc((100% - 48px) / 3);
+  /* margin-right: 24px; */
+
+  /* width: calc((100% - 48px) / 3); */
+  flex-basis: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.card:not(:last-child) {
+  margin-bottom: 48px;
+}
 .card:hover,
 .card:active {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.card:nth-child(3n) {
+/* .card:nth-child(3n) {
   margin-right: 0;
 }
 .card:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
 .card-border {
   border: 1px solid var(--accent-color);
   border-top: none;
@@ -1141,6 +1147,24 @@ body {
   }
   .filter {
     justify-content: center;
+    margin-bottom: 64px;
+  }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-basis: calc((100% - 24px) / 2);
+    margin-right: 24px;
+  }
+  .card:nth-child(2n) {
+    margin-right: 0;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .card:last-child {
+    margin-left: 0;
   }
 }
 
@@ -1221,6 +1245,10 @@ body {
   .footer-soc-list {
     margin-bottom: 0px;
   }
+  .filter-section {
+    padding-top: 100px;
+    padding-bottom: 72px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .team > .container,
@@ -1239,9 +1267,5 @@ body {
   }
   .adv-icon-block {
     display: none;
-  }
-  .filter-section {
-    padding-top: 100px;
-    padding-bottom: 72px;
   }
 }
