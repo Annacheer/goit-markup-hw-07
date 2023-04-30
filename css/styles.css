@@ -159,6 +159,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .mob-menu {
   position: fixed;
   overflow-y: scroll;
